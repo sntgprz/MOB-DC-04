@@ -1,4 +1,5 @@
 // Intro to Swift in class playground
+// By Tedi at GA
 
 import Foundation
 
