@@ -90,13 +90,12 @@ print("example sum \(5+5)")
 //Conditional statements
 
 //If statements
-
-var age = 60
+var age = 21
 
 if (age < 21) {
     //Inside these brackets is called a "Block"
     print("You cannot party!")
-}else if (age > 21) && (age < 55) {
+}else if (age >= 21) && (age < 55) {
     print("You are good to go, but you get no discounts!")
 }else {
     print("You get to party on a discount!")
@@ -104,4 +103,61 @@ if (age < 21) {
 
 //Loops
 
+//While Loop
+var x = 0
+while (x < 10) {
+    print("Running")
+    if x == 5 {
+        print("We are at the 6th Count")
+    }
+    x = x + 1
+}
 
+//How to break While loops
+while (x < 10) {
+    print("Running")
+    if x == 5 {
+        print("We are at the 6th Count")
+        break
+    }
+    x = x + 1
+}
+print(x);
+
+//For Loops
+
+for i in 1...5 {
+    print("We are counting \(i)")
+}
+
+var dummy = 5
+
+for i in 1...dummy {
+    print("We are counting \(i)")
+}
+
+//I is a temporary variable. It is only available to us inside the block of code of the for loop.
+
+var dummyDouble: Float = 9.3;
+
+/*
+for i in 1...dummyDouble {
+    print("We are counting \(i)")
+}
+
+This code above would never run because for loops only take integers as their range */
+
+
+//Open range operator ..
+for i in 1..<dummy {
+    print("We are counting \(i)")
+}
+//4 times vs 5 now. Why?
+
+
+
+
+
+
+
+//Placeholder
