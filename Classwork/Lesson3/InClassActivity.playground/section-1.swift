@@ -64,14 +64,49 @@ for i in 1...50 {
 }
 
 //6 Create a Constant
-let number = 0
+let number = 16
 
-//7 
+//7 Print if above number is even
+
+var x = number
+
+if number = obj as? [String] {
+    // obj is a string array. Do something with stringArray
+}
+else {
+    // obj is not a string array
+}
+
+//8 Count the number of characters in a string
 
 
+//9 Sum of 100 Random Numbers
+
+var counter = 1
+var sum = 0
+
+while counter != 101 {
+    sum = sum + Int(rand())
+    counter++
+}
+
+//10 Bonus Fizz
+for i in 1...100 {
+    print(i)
+}
 
 
+//11 BONUS TODO: The first fibonacci number is 0, the second is 1, the third is 1, the fourth is two, the fifth is 3, the sixth is 5, etc. The Xth fibonacci number is the sum of the X-1th fibonacci number and the X-2th fibonacci number. Print the 37th fibonacci number below
 
+var fibonacciOne = 1
+var fibonacciTwo = 0
+
+for i in 1...37 {
+    print(fibonacciTwo);
+    fibonacciTwo = fibonacciTwo + fibonacciOne;
+    fibonacciOne = fibonacciTwo;
+}
+    print("The 37th Fibonacci number is \(fibonacciTwo)")
 
 
 
