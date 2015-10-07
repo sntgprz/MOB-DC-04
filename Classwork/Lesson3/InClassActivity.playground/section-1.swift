@@ -103,10 +103,22 @@ var fibonacciTwo = 0
 
 for i in 1...37 {
     print(fibonacciTwo);
+    
     fibonacciTwo = fibonacciTwo + fibonacciOne;
+    
+    if fibonacciTwo == 1 {
+        
+    }
+    
+    if fibonacciTwo != 1 {
     fibonacciOne = fibonacciTwo;
+    }
 }
     print("The 37th Fibonacci number is \(fibonacciTwo)")
+
+/*
+0
+1
 
 
 
