@@ -33,8 +33,6 @@ func sayHelloNameAndLastName(firstName: String, lastName: String, age: Int) {
 
 sayHelloNameAndLastName("Santiago", "Perez", 5)
 
-//
-
 
 //Function that prints the area of a square rectangle
 
@@ -49,4 +47,40 @@ areaRect(2, 3)
 
 
 
-//After the firts parameter, you have to define the value of the parameter you are entering
+//IMPORTANT:
+// After the first parameter, you have to define the value of the parameter you are entering
+
+
+func getArea(height: Double, width: Double) -> Double{
+    let area: Double = height * width
+    return area
+    //This return statement makes the function stop running
+    
+    //print("This will never print)")
+}
+
+//The arrow means that the function is expected to return a Double
+
+func displayArea(area: Double) {
+    print("The area is \(area)")
+}
+
+
+//Let's try the two functions above
+
+var mySquare = getArea(25 , 25)
+var myRectangle = getArea(3 , 4)
+
+displayArea(mySquare)
+
+displayArea(myRectangle)
+
+
+//The way we can split the responsibilities of our code is by adding returns to our functions
+
+
+
+
+//You can pass arguments as a nil.
+
+
