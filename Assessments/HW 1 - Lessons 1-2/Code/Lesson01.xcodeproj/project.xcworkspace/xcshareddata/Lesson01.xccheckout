@@ -10,31 +10,31 @@
 	<string>Lesson01</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>60449365D3D71347BC07661FE356BA1B2E073D10</key>
-		<string>https://github.com/generalassembly-studio/MOB_Materials.git</string>
+		<key>76CA88842447FA48D35BF63B1CD85041B529F9E0</key>
+		<string>https://github.com/sntgprz/MOB-DC-04.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Assesments/HW1_Lesson01-02/Lesson01.xcodeproj</string>
+	<string>Assessments/HW 1 - Lessons 1-2/Code/Lesson01.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>60449365D3D71347BC07661FE356BA1B2E073D10</key>
-		<string>../../../..</string>
+		<key>76CA88842447FA48D35BF63B1CD85041B529F9E0</key>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/generalassembly-studio/MOB_Materials.git</string>
+	<string>https://github.com/sntgprz/MOB-DC-04.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>60449365D3D71347BC07661FE356BA1B2E073D10</string>
+	<string>76CA88842447FA48D35BF63B1CD85041B529F9E0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>60449365D3D71347BC07661FE356BA1B2E073D10</string>
+			<string>76CA88842447FA48D35BF63B1CD85041B529F9E0</string>
 			<key>IDESourceControlWCCName</key>
-			<string>MOB-Materials</string>
+			<string>MOB-DC-04</string>
 		</dict>
 	</array>
 </dict>
