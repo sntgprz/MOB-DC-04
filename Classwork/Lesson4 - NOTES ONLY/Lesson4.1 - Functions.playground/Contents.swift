@@ -37,13 +37,13 @@ sayHelloNameAndLastName("Santiago", "Perez", 5)
 //Function that prints the area of a square rectangle
 
 func areaRect(side1: Int, side2: Int) {
-    var area: Int = side1 * side2
+    let area: Int = side1 * side2
     print("The area of this rectangle is \(area)")
 }
 
 
-areaRect(12, 16)
-areaRect(2, 3)
+areaRect(12 , side2: 16)
+areaRect(2, side2: 3)
 
 
 
@@ -68,8 +68,8 @@ func displayArea(area: Double) {
 
 //Let's try the two functions above
 
-var mySquare = getArea(25 , 25)
-var myRectangle = getArea(3 , 4)
+var mySquare = getArea(25 , width: 25)
+var myRectangle = getArea(3 , width: 4)
 
 displayArea(mySquare)
 
