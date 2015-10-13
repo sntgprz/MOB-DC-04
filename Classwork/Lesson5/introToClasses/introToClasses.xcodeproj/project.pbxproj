@@ -14,6 +14,7 @@
 		860A08AD1BCC747100F31D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 860A08AB1BCC747100F31D93 /* LaunchScreen.storyboard */; };
 		860A08B81BCC747100F31D93 /* introToClassesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A08B71BCC747100F31D93 /* introToClassesTests.swift */; };
 		860A08C31BCC747100F31D93 /* introToClassesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A08C21BCC747100F31D93 /* introToClassesUITests.swift */; };
+		860A090B1BCC92D800F31D93 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A090A1BCC92D800F31D93 /* LoginController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		860A08BE1BCC747100F31D93 /* introToClassesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = introToClassesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		860A08C21BCC747100F31D93 /* introToClassesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introToClassesUITests.swift; sourceTree = "<group>"; };
 		860A08C41BCC747100F31D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		860A090A1BCC92D800F31D93 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				860A08A91BCC747100F31D93 /* Assets.xcassets */,
 				860A08AB1BCC747100F31D93 /* LaunchScreen.storyboard */,
 				860A08AE1BCC747100F31D93 /* Info.plist */,
+				860A090A1BCC92D800F31D93 /* LoginController.swift */,
 			);
 			path = introToClasses;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				860A08A51BCC747100F31D93 /* ViewController.swift in Sources */,
+				860A090B1BCC92D800F31D93 /* LoginController.swift in Sources */,
 				860A08A31BCC747100F31D93 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +487,7 @@
 				860A08C91BCC747100F31D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		860A08CA1BCC747100F31D93 /* Build configuration list for PBXNativeTarget "introToClassesTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				860A08CC1BCC747100F31D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		860A08CD1BCC747100F31D93 /* Build configuration list for PBXNativeTarget "introToClassesUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				860A08CF1BCC747100F31D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -150,3 +150,45 @@ tedisCar.milesDriven
 
 //hazCar acts as a pointer.
 //both hazCar and tedisCar both becomes pointer to an object. This is in SWIFT ONLY. Not all OOP
+
+
+//ARRAYS
+
+var myFirstArray: [Int] = [2, 5, 10, 15]
+
+//not good practice, but cmd + click to Array and see what happens
+
+var mySecondArray: Array = [2,5]
+
+
+//Use the count method
+myFirstArray.count
+
+//the append method adds an 
+myFirstArray.append(25)
+
+//Create an empty array
+var myEmptyArray: [String] = []
+
+myFirstArray[4]
+
+//To Check stuff in an array, use a for loop
+
+//1
+for i in myFirstArray {
+    print(i)
+}
+
+
+//2
+for i in myEmptyArray {
+    print(i)
+}
+
+
+//3
+for i in myEmptyArray {
+    print("Current value is \(i)")
+}
+
+//Takeaway
