@@ -49,7 +49,12 @@ class Car {
     
     func drive(distance: Float) {
         // +=replaces self.milesDriven + distance
-        self.milesDriven += distance
+        
+        if self.operational == true {
+            self.milesDriven += distance
+        }else {
+            print("You can't drive, your car is not operational")
+        }
     }
     
     
@@ -58,12 +63,44 @@ class Car {
     func flatTire() {
         self.operational = false
     }
+    
+    func carStatus() -> String {
+        //We want to return a car status back to the user
+        
+        //Use a ternary operator to let the user know if the car is operational or not
+        let operationalStatement = self.operational ? "" : "not"
+        
+        return "Your car has driven \(operationalStatement) and has driven \(self.milesDriven) miles"
+        
+        //remember this can be done with an if statement also
+    }
+}
+
+//New class for Lamborghini - we actually don't want to have more than one class in a single file
+//we want it to inherit from another class. We do this with a colon
+
+//A sub class inherits from a class through the: (Subclass : Superclass)
+
+class Lamborghini: Car {
+    var turboMode: Bool
+    
+    init(turboMode: Bool = false) {
+        //By default, we want the Lamborghini to not be in turbo mode
+        self.turboMode = turboMode
+        
+        //We need to initialize the properties from the parent class in this subclass
+        super.init(doors: 4, engine: "8 cylinder", speed: 500, used: false, wheels: 4)
+        
+    }
+    
+    
 }
 
 
 
-//let's create an instance of class Car
 
+
+//let's create an instance of class Car
 var tedisCar = Car(doors: 4, engine: "6 cylinders", speed: 400, used: true, wheels: 4)
 tedisCar.speed
 
@@ -72,14 +109,29 @@ tedisCar.speed = 500
 
 var patsCar = Car(doors: 4, engine: "4 cylinders", speed: 200, used: false, wheels: 3)
 
+
+//Calling the METHOD to upgrade speed
 tedisCar.upgradeSpeed(600)
 
+
+//checking if speed has been upgraded
 tedisCar.speed
 
 
 
 
 
+var tedisCarStatus = tedisCar.carStatus()
+
+tedisCar.milesDriven
+tedisCar.drive(210)
+tedisCar.milesDriven
+
+tedisCar.drive(100)
+tedisCar.milesDriven
 
 
+
+//If we create an object for a Lamborghini, we don't have to set all of those values, because we set them inside a method already
+var diablo = Lamborghini()
 
