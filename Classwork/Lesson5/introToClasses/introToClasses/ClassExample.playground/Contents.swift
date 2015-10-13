@@ -84,12 +84,12 @@ class Car {
 class Lamborghini: Car {
     var turboMode: Bool
     
-    init(turboMode: Bool = false) {
+    init(turboMode: Bool = false, wheels: Int) {
         //By default, we want the Lamborghini to not be in turbo mode
         self.turboMode = turboMode
         
         //We need to initialize the properties from the parent class in this subclass
-        super.init(doors: 4, engine: "8 cylinder", speed: 500, used: false, wheels: 4)
+        super.init(doors: 4, engine: "8 cylinder", speed: 500, used: false, wheels: wheels)
         
     }
     
@@ -133,5 +133,20 @@ tedisCar.milesDriven
 
 
 //If we create an object for a Lamborghini, we don't have to set all of those values, because we set them inside a method already
-var diablo = Lamborghini()
 
+
+var diablo = Lamborghini(wheels: 5)
+
+diablo.engine
+diablo.wheels
+
+
+var hazCar = tedisCar
+hazCar.milesDriven
+
+hazCar.milesDriven = 100
+
+tedisCar.milesDriven
+
+//hazCar acts as a pointer.
+//both hazCar and tedisCar both becomes pointer to an object. This is in SWIFT ONLY. Not all OOP
