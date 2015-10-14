@@ -49,17 +49,20 @@ printOptional(nil)
 
 func fibonacciNth (nth: Int) ->Int {
     
-    var firstNumber: Int = 0
-    var secondNumber: Int = 1
-    var thirdNumber: Int = 0
+    var a: Int = 0
+    var b: Int = 1
+    var c: Int = 0
     
-    for i in 1...nth {
-        var sec
-        var secondNumber = firstNumber + secondNumber
-        var
+    if nth == 1 {
+        return 0
+    }else if nth == 2 {
+        return 1
+    }else {
+    for i in 1...
+    
+        c = a + b
+        
     }
-    
-    return thirdNumber
 }
 
 fibonacciNth ()
