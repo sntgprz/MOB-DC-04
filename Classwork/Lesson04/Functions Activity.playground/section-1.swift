@@ -6,21 +6,21 @@
 // TODO: Write a function that prints out "Hello world!" 10 times
 
 func printHelloWorld10 () {
-    for i in 1...10 {
+    for _ in 1...10 {
         print("Hello world!")
     }
 }
 
 // TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
 
-func printDesiredTimes (numberOfTimes: Int) {
-    for i in 1...numberOfTimes{
-        print("Hit this line \(numberOfTimes)")
+func printDesiredTimes() {
+    for i in 1...20 {
+        print("Hit this line \(i)")
     }
 }
 
 //test
-printDesiredTimes(10)
+printDesiredTimes()
 
 // TODO: Write a function that accepts a string as a parameter. Print "Hello {value of string}!"
 
@@ -58,16 +58,16 @@ func fibonacciNth (nth: Int) ->Int {
     }else if nth == 2 {
         return 1
     }else {
-    for i in 1...
-    
+        for _ in 3...nth {
         c = a + b
-        
+        b = a
+        a = c
+        }
+        return c
     }
 }
 
-fibonacciNth ()
-
-*/
+fibonacciNth (4)
 
 
 // TODO: Write a function that calls the above function in order to print the sum of the first 20 fibonacci numbers.
@@ -101,6 +101,7 @@ func PrimeOrComposite (number: Int) -> String{
 
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 
+    /*
 func tipCalculator (billAmount: Double, tipPercentage: Double) -> (billAmount: Double, tipAmount: Double) {
     
     var tipAmount: Double = billAmount * tipPercentage
@@ -112,7 +113,7 @@ func tipCalculator (billAmount: Double, tipPercentage: Double) -> (billAmount: D
     }
     
 }
-
+*/
 
 
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
