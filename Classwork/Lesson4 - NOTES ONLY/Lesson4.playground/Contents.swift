@@ -23,7 +23,7 @@ print("Your name is \(name)")
 //First way
     print("your name is \(name!)")
 
-//To ways to properly Unrap
+//Two ways to properly Unrap
 
 //Second way
 if name != nil {

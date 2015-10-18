@@ -31,7 +31,7 @@ func sayHelloNameAndLastName(firstName: String, lastName: String, age: Int) {
     print("Your first name is \(lastName)")
 }
 
-sayHelloNameAndLastName("Santiago", "Perez", 5)
+sayHelloNameAndLastName("Santiago", lastName: "Perez", age: 5)
 
 
 //Function that prints the area of a square rectangle

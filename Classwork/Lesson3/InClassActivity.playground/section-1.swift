@@ -70,11 +70,12 @@ let number = 16
 
 var x = number
 
-if number = obj as? [String] {
-    // obj is a string array. Do something with stringArray
-}
-else {
-    // obj is not a string array
+if (x % 2) == 0 {
+    print(" \(x) is even")
+    
+} else {
+print(" \(x) is odd")
+    
 }
 
 //8 Count the number of characters in a string

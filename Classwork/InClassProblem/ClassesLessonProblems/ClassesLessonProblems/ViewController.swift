@@ -14,15 +14,9 @@
 
 // TO DO: Create a player class (hint: player file already created) that has properties for name, and optionally one or more of the following: age, gender, weight, and height.
 
-        //Done
-
 // TO DO: Create four text fields in interface builder. Each player has a text field for name and one of the other properties.
 
-        //Done
-
 // TO DO: Create a button in interface builder and tie it to an IB action. The action matches player 1 vs player 2 and decides a winner based on one of the characteristics/properties mentioned above. You set your own rule.
-
-        //Done
 
 // TO DO: Display the result of the match in a label. Every time the user taps the match button, a new result is generated.
 
@@ -35,58 +29,13 @@
 
 import UIKit
 
-
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Player1NameField: UITextField!
-    
-    @IBOutlet weak var Player1AgeField: UITextField!
-    
-    @IBOutlet weak var Player2NameField: UITextField!
-    
-    @IBOutlet weak var Player2AgeField: UITextField!
-    
-    @IBOutlet weak var resultsLabel: UILabel!
-    
-    @IBOutlet weak var matchOutlet: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
-    @IBAction func matchAction(sender: AnyObject) {
-        
-        //Match The Two Players
-        //Rule: The youngest player wins
-        
-        //Create an instance for Player 1
-        let player1 = Player(name: Player1NameField.text!, age: Int(Player1AgeField.text!)!)
-        
-        //Create an instance for Player 2
-        let player2 = Player(name: Player2NameField.text!, age: Int(Player1NameField.text!)!)
-        
-        
-        //Match Based on Age
-        if player1.age < player2.age {
-            let winner = player1.name
-            self.resultsLabel.text = winner
-        }else if player2.age > player1.age {
-            let winner = player2.name
-            self.resultsLabel.text = winner
-        }else if player1.age == player2.age {
-            let winner = "It's a Tie!"
-            self.resultsLabel.text = winner
-        }else {
-            let winner = "You somehow screwed up"
-             self.resultsLabel.text = winner
-        }
-     
-    
-        
-        
-    }
+
 
 }
 

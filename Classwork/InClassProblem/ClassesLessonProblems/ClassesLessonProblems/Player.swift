@@ -9,8 +9,5 @@
 import Foundation
 
 struct Player {
-    var name: String
-    var age: Int
-    // var weight: Float? //In pounds
-    // var height: Float? //In inches
+    
 }
