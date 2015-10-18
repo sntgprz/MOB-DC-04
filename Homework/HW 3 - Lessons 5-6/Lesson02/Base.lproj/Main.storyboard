@@ -51,15 +51,53 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder text, replace me!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-sh-fBn">
-                                <rect key="frame" x="138" y="249" width="325" height="101"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="325" id="0YK-KA-gJL"/>
-                                    <constraint firstAttribute="height" constant="101" id="SfY-p1-xrP"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-Ri-B3M">
+                                <rect key="frame" x="200" y="231" width="200" height="30"/>
+                                <state key="normal" title="Greetings to You"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="241" width="200" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="greetingsToUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cea-OX-O8L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urJ-I9-TKg">
+                                <rect key="frame" x="200" y="231" width="200" height="30"/>
+                                <state key="normal" title="Multiple Things You Can Do"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="100" y="342" width="200" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="multipleThingsToDoAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6UW-Rb-3lN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-oe-JHo">
+                                <rect key="frame" x="200" y="231" width="200" height="30"/>
+                                <state key="normal" title="What Can You Do At Your Age?"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="293" width="212" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="whatCanYouDoAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RH4-9f-hBc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4j-tN-1VM">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="375" width="306" height="66"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPq-8t-7Lb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="53" y="440" width="284" height="107"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvU-j8-0it">
                                 <rect key="frame" x="251" y="188" width="98" height="30"/>
@@ -67,25 +105,42 @@
                                     <constraint firstAttribute="height" constant="30" id="5Jq-ks-r1L"/>
                                     <constraint firstAttribute="width" constant="98" id="ifh-L7-OIh"/>
                                 </constraints>
-                                <state key="normal" title="Generate text!">
+                                <state key="normal" title="hello world?">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="87" y="195" width="217" height="30"/>
+                                </variation>
                                 <connections>
-                                    <action selector="generateTextAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oBN-Jj-MGI"/>
+                                    <action selector="generateHelloWorldAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="syD-Pv-t0s"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="v2W-sh-fBn" secondAttribute="centerX" id="68c-ag-RaM"/>
                             <constraint firstItem="dvu-Gz-gU3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="26" id="Dag-Q3-O8a"/>
                             <constraint firstAttribute="centerX" secondItem="vvU-j8-0it" secondAttribute="centerX" id="Dpp-YF-b3T"/>
-                            <constraint firstItem="v2W-sh-fBn" firstAttribute="top" secondItem="vvU-j8-0it" secondAttribute="bottom" constant="31" id="P1u-Fz-KUb"/>
                             <constraint firstItem="HD3-Of-BAd" firstAttribute="top" secondItem="dvu-Gz-gU3" secondAttribute="bottom" constant="19" id="gLg-zz-mbV"/>
                             <constraint firstAttribute="centerX" secondItem="dvu-Gz-gU3" secondAttribute="centerX" id="nEN-5d-05d"/>
                             <constraint firstItem="vvU-j8-0it" firstAttribute="top" secondItem="HD3-Of-BAd" secondAttribute="bottom" constant="19" id="uE4-OL-hCH"/>
                             <constraint firstAttribute="centerX" secondItem="HD3-Of-BAd" secondAttribute="centerX" id="xtl-7l-iVd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="urJ-I9-TKg"/>
+                                <exclude reference="xyG-oe-JHo"/>
+                                <exclude reference="S4j-tN-1VM"/>
+                                <exclude reference="DPq-8t-7Lb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="urJ-I9-TKg"/>
+                                <include reference="xyG-oe-JHo"/>
+                                <include reference="S4j-tN-1VM"/>
+                                <include reference="DPq-8t-7Lb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="eCL-8y-xIB">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="Yim-2Z-LSM">
@@ -95,14 +150,15 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="ageField" destination="HD3-Of-BAd" id="vh6-nu-1Lr"/>
-                        <outlet property="helloWorldLabel" destination="v2W-sh-fBn" id="8tj-OU-SVp"/>
-                        <outlet property="nameField" destination="dvu-Gz-gU3" id="p0N-qz-bgx"/>
+                        <outlet property="ageField" destination="HD3-Of-BAd" id="ehY-qY-q9a"/>
+                        <outlet property="ageResultsLabel" destination="DPq-8t-7Lb" id="FhF-GM-gDR"/>
+                        <outlet property="displayLabel" destination="S4j-tN-1VM" id="bAp-Ia-L5z"/>
+                        <outlet property="nameField" destination="dvu-Gz-gU3" id="fvY-g2-YH3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="707" y="-290"/>
+            <point key="canvasLocation" x="706.5" y="-290"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="edq-sf-WeX">
@@ -123,7 +179,7 @@
                                     <constraint firstAttribute="width" constant="74" id="xjJ-ke-pIy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dsS-73-FSq">
@@ -196,7 +252,7 @@
                                     <constraint firstAttribute="width" constant="280" id="kUX-Vx-gNv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVV-GO-Y1O">
@@ -270,7 +326,7 @@
                                     <constraint firstAttribute="width" constant="290" id="g9h-KO-Q6i"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

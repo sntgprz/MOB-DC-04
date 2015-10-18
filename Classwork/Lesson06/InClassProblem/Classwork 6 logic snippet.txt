@@ -1,0 +1,23 @@
+        //Match The Two Players
+        //Rule: The youngest player wins
+        
+        //Create an instance for Player 1
+        let player1 = Player(name: Player1NameField.text!, age: Int(Player1AgeField.text!)!)
+        
+        //Create an instance for Player 2
+        let player2 = Player(name: Player2NameField.text!, age: Int(Player1NameField.text!)!)
+        
+        
+        //Match Based on Age
+        if player1.age < player2.age {
+            let winner = player1.name
+            self.resultsLabel.text = winner
+        }else if player2.age > player1.age {
+            let winner = player2.name
+            self.resultsLabel.text = winner
+        }else if player1.age == player2.age {
+            let winner = "It's a Tie!"
+            self.resultsLabel.text = winner
+        }else {
+            let winner = "You somehow screwed up"
+             self.resultsLabel.text = winner
