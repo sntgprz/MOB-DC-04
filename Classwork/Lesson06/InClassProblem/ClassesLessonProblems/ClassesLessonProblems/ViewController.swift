@@ -26,6 +26,8 @@
 
 // TO DO: Display the result of the match in a label. Every time the user taps the match button, a new result is generated.
 
+        //I can display the results of the match, but it won't do it every time. The user needs to re-type all four fields even when they just updated only one
+
 // BONUS 1: Change the background color of the canvas for every match randomly (hint, have an array of UI Colors, and randomly pick color from that array).
 
 // Bonus 2: Have all the game logic in an additional Game class (additional to player class).
@@ -38,55 +40,60 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Player1NameField: UITextField!
+   
+    @IBOutlet weak var player1NameField: UITextField!
     
-    @IBOutlet weak var Player1AgeField: UITextField!
+    @IBOutlet weak var player1AgeField: UITextField!
     
-    @IBOutlet weak var Player2NameField: UITextField!
+    @IBOutlet weak var player2NameField: UITextField!
     
-    @IBOutlet weak var Player2AgeField: UITextField!
+    @IBOutlet weak var player2AgeField: UITextField!
     
     @IBOutlet weak var resultsLabel: UILabel!
-    
-    @IBOutlet weak var matchOutlet: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+     
     
-    @IBAction func matchAction(sender: AnyObject) {
+    @IBAction func beginMatchAction(sender: AnyObject) {
         
         //Match The Two Players
         //Rule: The youngest player wins
         
         //Create an instance for Player 1
-        let player1 = Player(name: Player1NameField.text!, age: Int(Player1AgeField.text!)!)
+        let player1 = Player(name: player1NameField.text!, age: Int(player1AgeField.text!)!, weight: nil, height: nil)
         
         //Create an instance for Player 2
-        let player2 = Player(name: Player2NameField.text!, age: Int(Player1NameField.text!)!)
+        let player2 = Player(name: player2NameField.text!, age: Int(player2AgeField.text!)!, weight: nil, height: nil)
         
         
         //Match Based on Age
         if player1.age < player2.age {
+            
             let winner = player1.name
-            self.resultsLabel.text = winner
-        }else if player2.age > player1.age {
+            self.resultsLabel.text = winner + " wins!"
+            
+        }else if (player1.age) > (player2.age) {
+            
             let winner = player2.name
-            self.resultsLabel.text = winner
+            self.resultsLabel.text = winner + " wins!"
+            
         }else if player1.age == player2.age {
+            
             let winner = "It's a Tie!"
             self.resultsLabel.text = winner
+            
         }else {
-            let winner = "You somehow screwed up"
-             self.resultsLabel.text = winner
+            
+            self.resultsLabel.text = "Please input all four categories again"
+            
         }
-     
     
-        
-        
+    
+    
     }
 
-}
 
+}
