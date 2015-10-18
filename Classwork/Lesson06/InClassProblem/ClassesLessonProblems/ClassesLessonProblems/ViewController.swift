@@ -59,39 +59,48 @@ class ViewController: UIViewController {
     
     @IBAction func beginMatchAction(sender: AnyObject) {
         
-        //Match The Two Players
-        //Rule: The youngest player wins
+        if (
         
-        //Create an instance for Player 1
-        let player1 = Player(name: player1NameField.text!, age: Int(player1AgeField.text!)!, weight: nil, height: nil)
+            (player1NameField.text != "") &&
+            (player1AgeField.text != "") &&
+            (player2NameField.text != "") &&
+            (player2AgeField.text != "")
         
-        //Create an instance for Player 2
-        let player2 = Player(name: player2NameField.text!, age: Int(player2AgeField.text!)!, weight: nil, height: nil)
+            ) {
+        
+                //Match The Two Players
+                //Rule: The youngest player wins
+        
+                //Create an instance for Player 1
+                let player1 = Player(name: player1NameField.text!, age: Int(player1AgeField.text!)!, gender: nil, weight: nil, height: nil)
+        
+                //Create an instance for Player 2
+                let player2 = Player(name: player2NameField.text!, age: Int(player2AgeField.text!)!, gender: nil, weight: nil, height: nil)
         
         
-        //Match Based on Age
-        if player1.age < player2.age {
+                //Match Based on Age
+                if player1.age < player2.age {
             
-            let winner = player1.name
-            self.resultsLabel.text = winner + " wins!"
+                    let winner = player1.name
+                    self.resultsLabel.text = winner + " wins!"
             
-        }else if (player1.age) > (player2.age) {
+                }else if (player1.age) > (player2.age) {
             
-            let winner = player2.name
-            self.resultsLabel.text = winner + " wins!"
+                    let winner = player2.name
+                    self.resultsLabel.text = winner + " wins!"
             
-        }else if player1.age == player2.age {
+                }else if player1.age == player2.age {
             
-            let winner = "It's a Tie!"
-            self.resultsLabel.text = winner
+                    let winner = "It's a Tie!"
+                    self.resultsLabel.text = winner
             
-        }else {
+                }else {
             
-            self.resultsLabel.text = "Please input all four categories again"
+                    self.resultsLabel.text = "Please input all four categories"
             
+                }
+    
         }
-    
-    
     
     }
 

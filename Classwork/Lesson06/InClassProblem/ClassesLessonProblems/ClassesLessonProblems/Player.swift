@@ -11,6 +11,7 @@ import Foundation
 struct Player {
     var name: String
     var age: Int
+    var gender: String?
     var weight: Float?
     var height: Float?
 }
