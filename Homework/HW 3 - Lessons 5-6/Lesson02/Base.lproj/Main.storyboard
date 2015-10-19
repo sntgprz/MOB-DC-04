@@ -61,7 +61,7 @@
                                     <action selector="greetingsToUser:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cea-OX-O8L"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urJ-I9-TKg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urJ-I9-TKg">
                                 <rect key="frame" x="200" y="231" width="200" height="30"/>
                                 <state key="normal" title="Multiple Things You Can Do"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -71,7 +71,7 @@
                                     <action selector="multipleThingsToDoAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6UW-Rb-3lN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-oe-JHo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyG-oe-JHo">
                                 <rect key="frame" x="200" y="231" width="200" height="30"/>
                                 <state key="normal" title="What Can You Do At Your Age?"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
