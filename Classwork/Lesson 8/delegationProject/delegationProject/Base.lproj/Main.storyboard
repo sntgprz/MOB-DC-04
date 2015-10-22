@@ -33,6 +33,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="editUsernameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajv-ok-cFv"/>
+                                    <segue destination="bRW-8B-zfD" kind="presentation" id="EGh-h0-P3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127.5" y="383"/>
+            <point key="canvasLocation" x="3" y="383"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="e8q-4V-bIy">
@@ -110,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prp-6P-Rpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766.5" y="383"/>
+            <point key="canvasLocation" x="814.5" y="383"/>
         </scene>
     </scenes>
 </document>

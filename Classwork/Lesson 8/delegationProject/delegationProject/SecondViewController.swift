@@ -19,6 +19,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var usernameField: UITextField!
     
+    var delegate: UpdateUsernameDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,10 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func saveAndGoBack(sender: AnyObject) {
+        self.delegate?.updateUsername(self.usernameField.text!)
+        
+        //We need to also dismiss the screen
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
   
 

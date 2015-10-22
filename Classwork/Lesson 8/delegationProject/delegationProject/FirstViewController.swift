@@ -8,8 +8,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, UpdateUsernameDelegate {
 
+    
+    
     @IBOutlet weak var usernameLabel: UILabel!
     
     override func viewDidLoad() {
@@ -21,9 +23,14 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func updateUsername(name: String){
+        self.usernameLabel.text = name
+    }
 
     @IBAction func editUsernameAction(sender: AnyObject) {
     }
+    
 
 }
 
