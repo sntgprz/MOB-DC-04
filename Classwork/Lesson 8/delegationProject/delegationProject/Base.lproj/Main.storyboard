@@ -7,7 +7,7 @@
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="delegationProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="firstVC" id="BYZ-38-t0r" customClass="FirstViewController" customModule="delegationProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,7 +33,6 @@
                                 </variation>
                                 <connections>
                                     <action selector="editUsernameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ajv-ok-cFv"/>
-                                    <segue destination="bRW-8B-zfD" kind="presentation" id="EGh-h0-P3i"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -62,7 +61,7 @@
         <!--Second View Controller-->
         <scene sceneID="e8q-4V-bIy">
             <objects>
-                <viewController id="bRW-8B-zfD" customClass="SecondViewController" customModule="delegationProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="secondVC" id="bRW-8B-zfD" customClass="SecondViewController" customModule="delegationProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kak-ZI-sBw"/>
                         <viewControllerLayoutGuide type="bottom" id="kYI-FD-gDL"/>
