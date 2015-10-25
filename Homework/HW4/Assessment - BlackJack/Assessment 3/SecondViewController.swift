@@ -15,10 +15,11 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        gameRules.text = "1. Tap twice on green box to get dealt another card. \n2. Swipe right to stop dealing cards and compare your score to CPU's \n3. If your score goes above 21, you lose."
     }
 
 
-    //Programmatically Dismisses the View Controller
     @IBAction func dismissRules(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
