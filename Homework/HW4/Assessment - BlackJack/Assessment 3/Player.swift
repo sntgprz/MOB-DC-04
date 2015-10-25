@@ -8,6 +8,27 @@
 
 import Foundation
 
-class Player {
+struct Player {
     
+    var currentCount: Int
+    var hand: [Int]
+    
+    
+    mutating func updateCurrentCount(playerHand: [Int]) {
+        //Adds the elements in the "Hand" Array
+        
+        let count = playerHand.count
+        
+        var arraySum = 0
+        
+    
+        for i in 1...count {
+            
+            arraySum += playerHand[i-1]
+            
+        }
+        
+        self.currentCount = arraySum
+        
+    }
 }
