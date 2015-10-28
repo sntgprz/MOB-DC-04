@@ -33,6 +33,8 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func saveAndGoBack(sender: AnyObject) {
+        
+        //calling the method here
         self.delegate?.updateUsername(self.usernameField.text!)
         
         //We need to also dismiss the screen

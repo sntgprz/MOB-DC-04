@@ -29,7 +29,7 @@ class FirstViewController: UIViewController, UpdateUsernameDelegate {
     }
 
     @IBAction func editUsernameAction(sender: AnyObject) {
-        var secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("secondVC") as! SecondViewController
+        let secondVC = self.storyboard?.instantiateViewControllerWithIdentifier("secondVC") as! SecondViewController
         
         secondVC.delegate = self
         self.presentViewController(secondVC, animated: true, completion: nil)
