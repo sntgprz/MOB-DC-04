@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProgrammaticConstraints" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikm-e7-euw">
+                                <rect key="frame" x="250" y="20" width="101" height="96"/>
+                                <color key="backgroundColor" red="0.92124098239999996" green="0.0" blue="0.037018990209999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4gV-yO-jWG"/>
+                                    <constraint firstAttribute="width" constant="101" id="djT-dC-mH0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="mbb-CB-QJw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="xkj-HX-Gps"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ikm-e7-euw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SSC-G3-Ym7"/>
+                            <constraint firstItem="Ikm-e7-euw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tJe-fG-a3t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="head" destination="Ikm-e7-euw" id="4hr-hr-A3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+    </scenes>
+</document>
