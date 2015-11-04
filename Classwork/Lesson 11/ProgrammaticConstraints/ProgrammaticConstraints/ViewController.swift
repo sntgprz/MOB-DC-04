@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         drawBody()
-        //drawLeftArm()
+       // drawLeftArm()
         //drawRightArm()
         drawLeftLeg()
         drawRightLeg()
@@ -80,6 +80,7 @@ class ViewController: UIViewController {
             multiplier: 1,
             constant: 0)
         
+        /*
         let bodyBottomPos = NSLayoutConstraint(item: self.body,
             attribute: NSLayoutAttribute.Bottom,
             relatedBy: NSLayoutRelation.Equal,
@@ -87,6 +88,7 @@ class ViewController: UIViewController {
             attribute: NSLayoutAttribute.Bottom,
             multiplier: 1,
             constant: 0)
+        */
      
         let bodyHorizontalPos = NSLayoutConstraint(item: self.body,
             attribute: NSLayoutAttribute.Leading,
@@ -96,7 +98,7 @@ class ViewController: UIViewController {
             multiplier: 1,
             constant: self.head.frame.width*(0.25))
         
-        self.view.addConstraints([bodyWidth, bodyTopPos, bodyBottomPos, bodyHorizontalPos])
+        self.view.addConstraints([bodyWidth, bodyTopPos, bodyHorizontalPos])
         
     }
     
@@ -105,16 +107,38 @@ class ViewController: UIViewController {
         
         self.leftArm.backgroundColor = UIColor.brownColor()
         
-        //First Step: Add our main object to the subview
         self.view.addSubview(self.leftArm)
-        
-        
-        //Tell the program that we are are switching to programmatic constraints from CGRect
         
         self.leftArm.translatesAutoresizingMaskIntoConstraints = false
         
-        //We can start adding constraints
+        let leftArmLeading = NSLayoutConstraint(item: self.leftArm,
+            attribute: NSLayoutAttribute.Leading,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: self.view,
+            attribute: NSLayoutAttribute.Leading,
+            multiplier: 1,
+            constant: 20)
         
+        let leftArmTrailing = NSLayoutConstraint(item: self.leftArm,
+            attribute: NSLayoutAttribute.Trailing,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: self.body,
+            attribute: NSLayoutAttribute.Leading,
+            multiplier: 1,
+            constant: 0)
+        
+        let leftArmTopPosition = NSLayoutConstraint(item: self.leftArm,
+            attribute: NSLayoutAttribute.Top,
+            relatedBy: NSLayoutRelation.Equal,
+            toItem: self.head,
+            attribute: NSLayoutAttribute.Leading,
+            multiplier: 1,
+            constant: 0)
+        
+        
+        
+        
+      /*
         let leftArmLeading = NSLayoutConstraint(item: self.leftArm,
             attribute: NSLayoutAttribute.Leading,
             relatedBy: NSLayoutRelation.Equal,
@@ -148,6 +172,8 @@ class ViewController: UIViewController {
             constant: 30)
         
         self.view.addConstraints([leftArmLeading, leftArmTrailing, leftArmTopPos, leftArmHeight])
+
+        */
         
     }
     

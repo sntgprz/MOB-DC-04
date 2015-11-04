@@ -22,8 +22,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="4gV-yO-jWG"/>
                                     <constraint firstAttribute="width" constant="101" id="djT-dC-mH0"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="mbb-CB-QJw"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="99" id="xkj-HX-Gps"/>
                                 </constraints>
                             </view>
                         </subviews>
