@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmD-WL-78s">
+                                <rect key="frame" x="256" y="290" width="88.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXm-kv-Nwh">
+                                <rect key="frame" x="476" y="424" width="84" height="30"/>
+                                <state key="normal" title="Dark Theme"/>
+                                <connections>
+                                    <action selector="darkThemeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8J-oB-MKK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oy9-Bw-0ER">
+                                <rect key="frame" x="40" y="424" width="86" height="30"/>
+                                <state key="normal" title="Light Theme"/>
+                                <connections>
+                                    <action selector="lightThemeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s46-5r-IkE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="HXm-kv-Nwh" secondAttribute="trailing" constant="20" id="2oR-Ps-fHY"/>
+                            <constraint firstItem="HXm-kv-Nwh" firstAttribute="top" secondItem="QmD-WL-78s" secondAttribute="bottom" constant="113.5" id="5RL-ON-t0G"/>
+                            <constraint firstItem="QmD-WL-78s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="STp-MK-SFx"/>
+                            <constraint firstItem="Oy9-Bw-0ER" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Tgj-ew-3Ml"/>
+                            <constraint firstItem="QmD-WL-78s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4a-eU-mpN"/>
+                            <constraint firstItem="Oy9-Bw-0ER" firstAttribute="top" secondItem="QmD-WL-78s" secondAttribute="bottom" constant="113.5" id="sKt-sb-Vxj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloLabel" destination="QmD-WL-78s" id="4zj-Ah-fpx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

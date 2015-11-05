@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
+        
+        let currentTheme = NSUserDefaults.standardUserDefaults().objectForKey("theme")
+        
+        if currentTheme == nil {
+            NSUserDefaults.standardUserDefaults().setObject("light", forKey: "theme")
+        }
+        
         return true
     }
 
