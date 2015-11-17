@@ -12,6 +12,7 @@ import UIKit
 
 protocol DayExpenditure {
     func addDayExpenditureToArray(expenditureAmount: Float)
+    
 }
 
 class ExpenditureAdderVC: UIViewController {
@@ -34,8 +35,11 @@ class ExpenditureAdderVC: UIViewController {
     }
     
     @IBAction func updateLedgerButton(sender: AnyObject) {
-        if expenditureInputTextField != "" {
-            self.delegate!.addDayExpenditureToArray(Float(self.expenditureInputTextField.text!)!)
+        if self.expenditureInputTextField.text != "" {
+            
+            let expenditureAsFloat = Float(self.expenditureInputTextField.text!)!
+            
+            self.delegate?.addDayExpenditureToArray(expenditureAsFloat)
             dismiss()
         }
     }
