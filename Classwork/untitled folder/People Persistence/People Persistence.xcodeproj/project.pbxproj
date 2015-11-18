@@ -13,6 +13,7 @@
 		866CE10F1BFAB08000BCC563 /* People_Persistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 866CE10D1BFAB08000BCC563 /* People_Persistence.xcdatamodeld */; };
 		866CE1111BFAB08000BCC563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 866CE1101BFAB08000BCC563 /* Assets.xcassets */; };
 		866CE1141BFAB08000BCC563 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 866CE1121BFAB08000BCC563 /* LaunchScreen.storyboard */; };
+		866CE11C1BFAB1C900BCC563 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CE11B1BFAB1C900BCC563 /* Person.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		866CE1101BFAB08000BCC563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		866CE1131BFAB08000BCC563 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		866CE1151BFAB08000BCC563 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		866CE11B1BFAB1C900BCC563 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				866CE1121BFAB08000BCC563 /* LaunchScreen.storyboard */,
 				866CE1151BFAB08000BCC563 /* Info.plist */,
 				866CE10D1BFAB08000BCC563 /* People_Persistence.xcdatamodeld */,
+				866CE11B1BFAB1C900BCC563 /* Person.swift */,
 			);
 			path = "People Persistence";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				866CE10F1BFAB08000BCC563 /* People_Persistence.xcdatamodeld in Sources */,
 				866CE1091BFAB08000BCC563 /* ViewController.swift in Sources */,
+				866CE11C1BFAB1C900BCC563 /* Person.swift in Sources */,
 				866CE1071BFAB08000BCC563 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
