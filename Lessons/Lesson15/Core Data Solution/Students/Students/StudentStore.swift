@@ -29,6 +29,8 @@ class StudentStore {
         students = getAllStudents()
     }
     
+    //Populates our students array
+    
     func getAllStudents() -> [Student] {
         // Instantiate a fetch request
         let fetchRequest = NSFetchRequest(entityName: "Student")
