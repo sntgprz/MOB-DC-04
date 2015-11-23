@@ -67,7 +67,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func loadStory(sender: AnyObject) {
+   /* @IBAction func loadStory(sender: AnyObject) {
         
         let path = NSTemporaryDirectory() + "mystory.txt"
         
@@ -77,6 +77,8 @@ class ViewController: UIViewController {
             
         }
     }
+
+    */
     
     @IBAction func saveStory(sender: AnyObject) {
     }
