@@ -1,0 +1,19 @@
+PODS:
+  - EZSwipeController (0.2)
+
+DEPENDENCIES:
+  - EZSwipeController (from `https://github.com/goktugyil/EZSwipeController`)
+
+EXTERNAL SOURCES:
+  EZSwipeController:
+    :git: https://github.com/goktugyil/EZSwipeController
+
+CHECKOUT OPTIONS:
+  EZSwipeController:
+    :commit: 93dbe1b26d6b0255dcb65d13468d14e31518a61e
+    :git: https://github.com/goktugyil/EZSwipeController
+
+SPEC CHECKSUMS:
+  EZSwipeController: c419b9edbecd44f666bc39b7b617bbdb5ffd3bc7
+
+COCOAPODS: 0.39.0
