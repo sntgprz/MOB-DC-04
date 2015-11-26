@@ -27,7 +27,7 @@ class SecondViewController: UIViewController {
     
     func loadDataFromPlist() {
         
-        /*
+        
         
         let path = NSBundle.mainBundle().pathForResource("Root", ofType: "plist")
         
@@ -42,7 +42,7 @@ class SecondViewController: UIViewController {
         print(preferenceItems)
         
         
-        */
+        
         
     }
     
