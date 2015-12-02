@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SearchScreenViewController" customModule="foodTrackConceptCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="What are you craving?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsd-Ai-KdR">
+                                <rect key="frame" x="215" y="81" width="170" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsD-B6-0nJ">
+                                <rect key="frame" x="240" y="409" width="121" height="30"/>
+                                <state key="normal" title="GO"/>
+                                <connections>
+                                    <action selector="goButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Avr-ND-HbF"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uTY-ra-gID">
+                                <rect key="frame" x="20" y="144" width="560" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uTY-ra-gID" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="2Be-iM-LWA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uTY-ra-gID" secondAttribute="trailing" id="PI8-fo-A7C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wsD-B6-0nJ" secondAttribute="bottom" constant="161" id="Uba-e7-aeH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wsD-B6-0nJ" secondAttribute="trailing" constant="219" id="XsT-PQ-b6z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nsd-Ai-KdR" secondAttribute="trailing" constant="195" id="ZIo-jc-eSg"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uTY-ra-gID" secondAttribute="leading" id="ZOp-gd-xg6"/>
+                            <constraint firstItem="Nsd-Ai-KdR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="195" id="ait-Qh-5b3"/>
+                            <constraint firstItem="wsD-B6-0nJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="220" id="gLF-cP-OOI"/>
+                            <constraint firstItem="uTY-ra-gID" firstAttribute="top" secondItem="Nsd-Ai-KdR" secondAttribute="bottom" constant="45" id="i8v-pf-uh4"/>
+                            <constraint firstItem="wsD-B6-0nJ" firstAttribute="height" secondItem="Nsd-Ai-KdR" secondAttribute="height" id="igM-Qq-xsA"/>
+                            <constraint firstItem="wsD-B6-0nJ" firstAttribute="width" secondItem="Nsd-Ai-KdR" secondAttribute="width" id="na3-1x-tPX"/>
+                            <constraint firstItem="Nsd-Ai-KdR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="61" id="r5v-oj-DOi"/>
+                            <constraint firstItem="Nsd-Ai-KdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vK2-xn-KOL"/>
+                            <constraint firstItem="wsD-B6-0nJ" firstAttribute="top" secondItem="uTY-ra-gID" secondAttribute="bottom" constant="49" id="zMC-5S-a4x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="2Be-iM-LWA"/>
+                                <exclude reference="vK2-xn-KOL"/>
+                                <exclude reference="igM-Qq-xsA"/>
+                                <exclude reference="na3-1x-tPX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="foodChoicePicker" destination="uTY-ra-gID" id="3wa-Yr-XEi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="337"/>
+        </scene>
+        <!--Search Results View Controller-->
+        <scene sceneID="Sfe-dJ-r5b">
+            <objects>
+                <tableViewController id="Czp-xt-bPm" customClass="SearchResultsViewController" customModule="foodTrackConceptCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="6iY-9A-FJm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nrP-4e-Jyz">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nrP-4e-Jyz" id="Xtk-uu-AyN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Czp-xt-bPm" id="WIV-oD-OdC"/>
+                            <outlet property="delegate" destination="Czp-xt-bPm" id="NXm-MC-Z6U"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MHt-Pg-MGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="337"/>
+        </scene>
+    </scenes>
+</document>
