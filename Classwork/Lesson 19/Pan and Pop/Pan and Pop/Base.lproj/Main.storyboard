@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pan_and_Pop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pool-fekt.png" translatesAutoresizingMaskIntoConstraints="NO" id="huu-oa-ti3">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="POd-j6-CKw"/>
+                                    <constraint firstAttribute="width" constant="405" id="Uy3-b5-FlX"/>
+                                    <constraint firstAttribute="width" constant="400" id="ide-M0-ZxD"/>
+                                    <constraint firstAttribute="height" constant="600" id="wOp-SJ-eIV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="POd-j6-CKw"/>
+                                        <exclude reference="Uy3-b5-FlX"/>
+                                        <exclude reference="ide-M0-ZxD"/>
+                                        <exclude reference="wOp-SJ-eIV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="POd-j6-CKw"/>
+                                        <exclude reference="Uy3-b5-FlX"/>
+                                        <exclude reference="ide-M0-ZxD"/>
+                                        <exclude reference="wOp-SJ-eIV"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pool-ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="0G4-qU-28Y">
+                                <rect key="frame" x="191" y="76" width="118" height="114"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="161" y="249" width="79" height="72"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="huu-oa-ti3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="HtB-FR-GMl"/>
+                            <constraint firstItem="huu-oa-ti3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PfK-au-Ehy"/>
+                            <constraint firstItem="huu-oa-ti3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dCT-g3-0XA"/>
+                            <constraint firstItem="huu-oa-ti3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="w7h-PP-hY1"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="huu-oa-ti3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="HtB-FR-GMl"/>
+                                <exclude reference="PfK-au-Ehy"/>
+                                <exclude reference="dCT-g3-0XA"/>
+                                <exclude reference="w7h-PP-hY1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="huu-oa-ti3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="HtB-FR-GMl"/>
+                                <include reference="PfK-au-Ehy"/>
+                                <include reference="dCT-g3-0XA"/>
+                                <include reference="w7h-PP-hY1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="ball" destination="0G4-qU-28Y" id="K11-cY-Lr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pool-ball.png" width="256" height="256"/>
+        <image name="pool-fekt.png" width="204" height="122"/>
+    </resources>
+</document>
